@@ -1,6 +1,8 @@
 # \<gz-cmd\>
 
-A web component to run commands on a simulation machine
+[documentation](https://osrf.github.io/gz-cmd/components/gz-cmd)
+
+A web component to run commands on a simulator machine.
 
 ## Install the Polymer-CLI
 
