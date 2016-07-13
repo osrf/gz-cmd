@@ -49,16 +49,15 @@
         <span id="feedback_text"/>
       </div>
 
-      <div>
+      <div hidden>
         <paper-input label="Command" id="cmdline" value="{{cmd::input}}"></paper-input>
-        <!-- Command:<input id=cmdline value="{{cmd::input}}"></input>-->
       </div>
 
-      <paper-button raised  on-tap="tapRun" id="buttonRun"">
-        Run
+      <paper-button raised  on-tap="tapRun" id="buttonRun">
+        Run gzserver
       </paper-button>
       <paper-button raised  on-tap="tapKill" id="buttonKill" style="display:none">
-        Kill process
+        Kill gzserver
       </paper-button>
 <!--
       <button on-tap="tapRun" id="buttonRun">Run</button>
@@ -163,8 +162,7 @@
                 that.$.buttonKill.style.display = 'none'
 
                 // Clear terminal
-                //that.$.console.style.display = 'none'
-                //that.$.console.innerHTML = ''
+                that.$.console.innerHTML = ''
               }
             })
           }).emit('authenticate', authMsg); // send the jwt
