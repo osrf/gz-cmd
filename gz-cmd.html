@@ -7,6 +7,10 @@
         display: block;
       }
 
+      #console {
+        text-align: left;
+      }
+
       #config {
         max-width:20em
       }
@@ -41,15 +45,7 @@
         User token:<input id=token value="{{token::input}}"></input>
       </div>
 
-
-    </div>
-    <div id="gui">
-
-      <div id="feedback" style="display:none">
-        <span id="feedback_text"/>
-      </div>
-
-      <div hidden>
+      <div>
         <paper-input label="Command" id="cmdline" value="{{cmd::input}}"></paper-input>
       </div>
 
@@ -59,6 +55,15 @@
       <paper-button raised  on-tap="tapKill" id="buttonKill" style="display:none">
         Kill gzserver
       </paper-button>
+
+
+    </div>
+    <div id="gui">
+
+      <div id="feedback" style="display:none">
+        <span id="feedback_text"/>
+      </div>
+
 <!--
       <button on-tap="tapRun" id="buttonRun">Run</button>
       <button on-tap="tapKill"id="buttonKill" style="display:none">Kill</button>
@@ -138,6 +143,7 @@
               that.processPid = msg.pid
               that.processStatus = msg.state
 
+              that.state = msg.state
               if (msg.state === 'ready') {
                 that.$.buttonRun.disabled = false
                 that.$.buttonKill.disabled = true
@@ -162,7 +168,7 @@
                 that.$.buttonKill.style.display = 'none'
 
                 // Clear terminal
-                that.$.console.innerHTML = ''
+                that.$.console.innerHTML += '<br> ---------- <br> killed '
               }
             })
           }).emit('authenticate', authMsg); // send the jwt
@@ -214,6 +220,11 @@
         token: {
           type: String,
           value: 'xxxadminxxx',
+          notify: true
+        },
+        state: {
+          type: String,
+          value: 'not set',
           notify: true
         },
         gui: {
