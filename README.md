@@ -1,5 +1,7 @@
 [ ![Codeship Status for osrf/gz-cmd](https://codeship.com/projects/03132470-1ae6-0134-0f10-0e8ad2af7d49/status?branch=master)](https://codeship.com/projects/159495)
 
+[![GitHub version](https://badge.fury.io/gh/osrf%2Fgz-cmd.svg)](https://badge.fury.io/gh/osrf%2Fgz-cmd)
+
 # \<gz-cmd\>
 
 [documentation](https://osrf.github.io/gz-cmd/components/gz-cmd)
