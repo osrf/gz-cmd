@@ -2,6 +2,8 @@
 
 [![GitHub version](https://badge.fury.io/gh/osrf%2Fgz-cmd.svg)](https://badge.fury.io/gh/osrf%2Fgz-cmd)
 
+[![Dependency Status](https://www.versioneye.com/user/projects/57ca37da968d640049e1287d/badge.svg?style=flat-square)](https://www.versioneye.com/user/projects/57ca37da968d640049e1287d)
+
 # \<gz-cmd\>
 
 [documentation](https://osrf.github.io/gz-cmd/components/gz-cmd)
