@@ -6,7 +6,10 @@
 
 # \<gz-cmd\>
 
-[documentation](https://osrf.github.io/gz-cmd/components/gz-cmd)
+documentation: [https://osrf.github.io/gz-cmd/components/gz-cmd](https://osrf.github.io/gz-cmd/components/gz-cmd)
+
+demo: [https://osrf.github.io/gz-cmd/components/gz-cmd](https://osrf.github.io/gz-cmd/components/gz-cmd/demo)
+
 
 A web component to run commands on a simulator machine.
 
