@@ -1,0 +1,25 @@
+{
+  "name": "gz-cmd",
+  "description": "A web component to run commands on a simulation machine",
+  "main": "gz-cmd.html",
+  "dependencies": {
+    "polymer": "Polymer/polymer#^1.4.0"
+  },
+  "devDependencies": {
+    "iron-component-page": "PolymerElements/iron-component-page#^1.0.0",
+    "iron-demo-helpers": "PolymerElements/iron-demo-helpers#^1.0.0",
+    "web-component-tester": "^4.0.0",
+    "webcomponentsjs": "webcomponents/webcomponentsjs#^0.7.0"
+  },
+  "homepage": "https://github.com/osrf/gz-cmd",
+  "_release": "610ef46985",
+  "_resolution": {
+    "type": "branch",
+    "branch": "master",
+    "commit": "610ef469857493e29ed2cf38365364ebbc0b9315"
+  },
+  "_source": "git://github.com/osrf/gz-cmd.git",
+  "_target": "master",
+  "_originalSource": "osrf/gz-cmd",
+  "_direct": true
+}
